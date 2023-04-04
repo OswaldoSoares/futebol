@@ -1,34 +1,38 @@
 <!doctype html>
 {% load static %}
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- normalize css -->
-    <link rel = "stylesheet"
-    href = "{% static 'core/resources/normalize.css' %}">
-    <link rel="stylesheet"
-    href="{% static 'core/css/style.css' %}">
-    <title>CAMPEONATO DE FIFA 17</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!-- normalize css -->
+        <link rel = "stylesheet"
+        href = "{% static 'core/resources/normalize.css' %}">
+        <link rel="stylesheet"
+        href="{% static 'core/css/style.css' %}">
+        <title>CAMPEONATO DE FIFA 17</title>
+    </head>
 <body>
-    <div  class="card-times">
-        <div class="card-header">
-            <h1>TIMES</h1>
-        </div>
-        <div class="card-body">
-            {% for i in list_times_fifa17 %}
-            <div class="card-body-item">
-                <img scr="">{{ i }}
+    <div class="header">
+        <div  class="card-times">
+            <div class="card-header">
+                <span>TIMES</span>
             </div>
-            {% endfor %}
+            <div class="card-body">
+                {% for i in list_times_fifa17 %}
+                <div class="card-body-item">
+                    <img src="core/img/corinthians.png">{{ i }}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="card-footer">
+                <div class="hero-btns">
+                    <button class="btn-white">GERA CAMPEONATO</button>
+                </div>
+            </div>
         </div>
-        <div class="card-footer">
-            <i class="sorteia times">GERA CAMPEONATO</i>
-        </div>
+        {% include "core/html_tabela_campeonato.html" %}
     </div>
-    {% include "core/html_tabela_campeonato.html" %}
 </body>
 <script scr={% static "core/js/core.js" %}></script>
 </html>

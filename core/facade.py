@@ -13,7 +13,7 @@ def create_contexto_lista():
         "Manchester United",
         "PSG",
         "Real Madrid",
-        "Seatle Sounders",
+        "Seattle Sounders",
         "Tigres",
     ]
     return {"list_times_fifa17": list_times_fifa17}
