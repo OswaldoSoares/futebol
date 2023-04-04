@@ -1,12 +1,24 @@
-<div  class="card-times">
-    <ul>
-        {% for i in list_times_fifa17 %}
-        <li>{{ i }}</li>
-        {% endfor %}
-    </ul>
-</div>
-<button class="sorteia times">GERA CAMPEONATO</button>
-{% include "core/html_tabela_campeonato.html" %}
-<script type="text/javascript">
-    {% include "core/static/js/core.js" %}
-</script>
+<!doctype html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet"
+    href="{% static 'core/css/style.css' %}">
+    <title>CAMPEONATO DE FIFA 17</title>
+</head>
+<body>
+    <div  class="card-times">
+        <ul>
+            {% for i in list_times_fifa17 %}
+            <li><img scr="">{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <button class="sorteia times">GERA CAMPEONATO</button>
+    {% include "core/html_tabela_campeonato.html" %}
+</body>
+<script scr={% static "core/js/core.js" %}></script>
+</html>
