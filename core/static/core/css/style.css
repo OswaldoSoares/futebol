@@ -40,6 +40,18 @@
     border-bottom: 3px solid white;
 }
 
+.card-times .card-body .card-body-item {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    padding-bottom: 0.2rem;
+}
+
+.card-times .card-body .card-body-item span {
+    padding-left: 5px;
+}
+
 .card-times .card-footer {
     height: 3rem;
     display: flex;
@@ -79,8 +91,9 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: 0.2rem;
 }
 
 .bayern {
