@@ -4,7 +4,7 @@ list_times_fifa17 = [
     "Bayern Munchen",
     "Chelsea",
     "Gamba Osaka",
-    "Inter",
+    "Internazionale Milano",
     "Juventus",
     "Lyonnais",
     "Manchester City",
