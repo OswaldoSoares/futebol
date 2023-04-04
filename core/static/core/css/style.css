@@ -16,7 +16,7 @@
 
 .card-times {
     background-color: #020202;
-    opacity: 0.6;
+    opacity: 0.8;
     min-width: 360px;
     height: 100vh;
     color: white;
@@ -72,4 +72,61 @@
     color: #fff;
     cursor: pointer;
     outline: 0;
+}
+
+.logo-times {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bayern {
+    background-image: url("/static/core/img/bayern.png");
+}
+
+.chelsea {
+    background-image: url("/static/core/img/chelsea.png");
+}
+
+.gamba {
+    background-image: url("/static/core/img/gamba.png");
+}
+
+.inter {
+    background-image: url("/static/core/img/inter.png");
+}
+
+.juventus {
+    background-image: url("/static/core/img/juventus.png");
+}
+
+.lyon {
+    background-image: url("/static/core/img/lyon.png");
+}
+
+.city {
+    background-image: url("/static/core/img/city.png");
+}
+
+.united {
+    background-image: url("/static/core/img/united.png");
+}
+
+.psg {
+    background-image: url("/static/core/img/psg.png");
+}
+
+.real {
+    background-image: url("/static/core/img/real.png");
+}
+
+.sounders {
+    background-image: url("/static/core/img/sounders.png");
+}
+
+.tigres {
+    background-image: url("/static/core/img/tigres.png");
 }
