@@ -21,7 +21,7 @@
             <div class="card-body">
                 {% for i in list_times_fifa17 %}
                 <div class="card-body-item">
-                    <div class="logo-times tigres {{ i }}"></div>{{ i }}
+                    <div class="logo-times {{ i.logo }}"></div>{{ i.time }}
                 </div>
                 {% endfor %}
             </div>

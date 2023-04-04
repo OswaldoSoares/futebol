@@ -3,18 +3,18 @@ import random
 
 def create_contexto_lista():
     list_times_fifa17 = [
-        "Bayern Munchen",
-        "Chelsea",
-        "Gamba Osaka",
-        "Internazionale Milano",
-        "Juventus",
-        "Lyonnais",
-        "Manchester City",
-        "Manchester United",
-        "PSG",
-        "Real Madrid",
-        "Seattle Sounders",
-        "Tigres",
+        {"time": "Bayern Munchen", "logo": "bayern"},
+        {"time": "Chelsea", "logo": "chelsea"},
+        {"time": "Gamba Osaka", "logo": "gamba"},
+        {"time": "Internazionale Milano", "logo": "inter"},
+        {"time": "Juventus", "logo": "juventus"},
+        {"time": "Lyonnais", "logo": "lyon"},
+        {"time": "Manchester City", "logo": "city"},
+        {"time": "Manchester United", "logo": "united"},
+        {"time": "PSG", "logo": "psg"},
+        {"time": "Real Madrid", "logo": "real"},
+        {"time": "Seattle Sounders", "logo": "sounders"},
+        {"time": "Tigres", "logo": "tigres"},
     ]
     return {"list_times_fifa17": list_times_fifa17}
 
