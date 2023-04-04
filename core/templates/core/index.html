@@ -11,13 +11,20 @@
 </head>
 <body>
     <div  class="card-times">
-        <ul>
+        <div class="card-header">
+            <h1>TIMES</h1>
+        </div>
+        <div class="card-body">
             {% for i in list_times_fifa17 %}
-            <li><img scr="">{{ i }}</li>
+            <div class="card-body-item">
+                <img scr="">{{ i }}
+            </div>
             {% endfor %}
-        </ul>
+        </div>
+        <div class="card-footer">
+            <i class="sorteia times">GERA CAMPEONATO</i>
+        </div>
     </div>
-    <button class="sorteia times">GERA CAMPEONATO</button>
     {% include "core/html_tabela_campeonato.html" %}
 </body>
 <script scr={% static "core/js/core.js" %}></script>
