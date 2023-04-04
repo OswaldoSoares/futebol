@@ -19,6 +19,7 @@ def create_contexto_lista():
     return {"list_times_fifa17": list_times_fifa17}
 
 
-def create_contexto_lista_sorteada(lista):
+def create_contexto_lista_sorteada():
+    lista = create_contexto_lista()
     lista_sorteada = random.shuffle(lista, len(lista))
     return {"lista_sorteada": lista_sorteada}
