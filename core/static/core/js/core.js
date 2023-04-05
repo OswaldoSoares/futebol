@@ -13,6 +13,7 @@ $(document).on('click', '.js-gera-campeonato', function(){
         success: function(data) {
             $(".card-campeonato").html(data.html_tabela_campeonato);
             $(".card-campeonato").show();
+            $(".js-gera-campeonato").hide();
         },
     });
 });
