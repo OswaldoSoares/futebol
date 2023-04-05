@@ -1,69 +1,129 @@
 <div class="card-campeonato">
     {% if lista_sorteada %}
     <div class="card-header">
-        <h1>CAMPEONATO</h1>
+        <h1 class="center">CAMPEONATO</h1>
     </div>
     <div class="card-body">
-        <input type="text" class="form-control" placeholder="Time 01"
-        id="time_01" value="{{ lista_sorteada.0.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 02"
-        id="time_02" value="{{ lista_sorteada.1.time }}" readonly>
-        <button>OK</button>
-        <input type="text" class="form-control" placeholder="Time 03"
-        id="time_03" value="{{ lista_sorteada.2.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 04"
-        id="time_04" value="{{ lista_sorteada.3.time }}" readonly>
-        <button>OK</button>
-        <input type="text" class="form-control" placeholder="Time 05"
-        id="time_05" value="{{ lista_sorteada.4.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 06"
-        id="time_06" value="{{ lista_sorteada.5.time }}" readonly>
-        <button>OK</button>
-        <input type="text" class="form-control" placeholder="Time 07"
-        id="time_07" value="{{ lista_sorteada.6.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 08"
-        id="time_08" value="{{ lista_sorteada.7.time }}" readonly>
-        <button>OK</button>
-        <input type="text" class="form-control" placeholder="Time 09"
-        id="time_09" value="{{ lista_sorteada.8.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 10"
-        id="time_10" value="{{ lista_sorteada.9.time }}" readonly>
-        <button>OK</button>
-        <input type="text" class="form-control" placeholder="Time 11"
-        id="time_11" value="{{ lista_sorteada.10.time }}" readonly>
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        X
-        <input type="number" value="0" step="1"
-        class="fporm-control">
-        <input type="text" class="form-control" placeholder="Time 12"
-        id="time_12" value="{{ lista_sorteada.11.time }}" readonly>
-        <button>OK</button>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 01"
+                id="time_01" value="{{ lista_sorteada.0.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 02"
+                id="time_02" value="{{ lista_sorteada.1.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 03"
+                id="time_03" value="{{ lista_sorteada.2.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 04"
+                id="time_04" value="{{ lista_sorteada.3.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 05"
+                id="time_05" value="{{ lista_sorteada.4.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 06"
+                id="time_06" value="{{ lista_sorteada.5.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 07"
+                id="time_07" value="{{ lista_sorteada.6.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 08"
+                id="time_08" value="{{ lista_sorteada.7.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 09"
+                id="time_09" value="{{ lista_sorteada.8.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 10"
+                id="time_10" value="{{ lista_sorteada.9.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
+        <div class="partida">
+            <div class="input-time">
+                <input type="text" class="form-control right" placeholder="Time 11"
+                id="time_11" value="{{ lista_sorteada.10.time }}" readonly>
+            </div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="versus"><span>x</span></div>
+            <div class="input-placar">
+                <input type="number" value="0" step="1" class="form-control center">
+            </div>
+            <div class="input-time">
+                <input type="text" class="form-control" placeholder="Time 12"
+                id="time_12" value="{{ lista_sorteada.11.time }}" readonly>
+            </div>
+            <div class="btn-ok">
+                <button class="btn-white"><i class="bi bi-check"></i></button>
+            </div>
+        </div>
     </div>
     <div class="card-header"></div>
     {% endif %}

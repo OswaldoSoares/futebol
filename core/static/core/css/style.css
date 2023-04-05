@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/static/core/img/fifa17_02.jpg");
     min-height: 100vh;
@@ -17,6 +23,7 @@
 .card-times {
     background-color: #020202;
     opacity: 0.7;
+    width: 30%;
     min-width: 360px;
     height: 100vh;
     color: white;
@@ -58,6 +65,89 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container-direita {
+    background-color: transparent;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.card-campeonato {
+    background-color: beige;
+    border-radius: 2rem;
+    opacity: 0.8;
+    width: 600px;
+    max-height: 50vh;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.card-campeonato .partida {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-campeonato .partida .input-time {
+    /* background-color: aqua; */
+    width: 33%;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.card-campeonato .partida .input-placar {
+    /* background-color: red; */
+    width: 10%;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.card-campeonato .partida .versus {
+    /* background-color: yellow; */
+    width: 5%;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.card-campeonato .partida .btn-ok {
+    width: 9%;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.card-campeonato .partida .btn-ok button {
+    background-color: #020202;
+    border: 3.5px solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.card-campeonato .partida .btn-ok button:hover {
+    background-color: transparent;
+    opacity: 0.8;
+    color: #020202;
+    border: 3.5px solid #020202;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
 }
 
 .hero-btns {
