@@ -24,8 +24,9 @@ def create_contexto_lista():
 
 def create_contexto_lista_sorteada():
     lista = create_contexto_lista()
-    lista_sorteada = random.shuffle(lista, len(lista))
-    return {"lista_sorteada": lista_sorteada}
+    lista = lista["list_times_fifa17"]
+    random.shuffle(lista)
+    return {"lista_sorteada": lista}
 
 
 def create_data_tabela_campeonato(request, contexto):
