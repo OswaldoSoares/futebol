@@ -5,8 +5,10 @@ $(document).ready(function() {
 $(document).on('click', '.js-gera-campeonato', function(){
     $.ajax({
         type: 'GET',
-        url: '/core/gera_campeonato',
-        data: {},
+        url: 'gera_campeonato/',
+        data: {
+            teste: "teste",
+        },
         beforeSend: function(){
             $(".card-campeonato").hide();
         },

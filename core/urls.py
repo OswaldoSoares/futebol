@@ -9,7 +9,7 @@ urlpatterns = [
         name="index_core",
     ),
     path(
-        "gera_campeonato",
+        "gera_campeonato/",
         gera_campeonato,
         name="gera_campeonato",
     ),
