@@ -10,5 +10,5 @@ def index_core(request):
 
 def gera_campeonato(request):
     contexto = facade.create_contexto_lista_sorteada()
-    data = facade.create_data_tabela_campeonato(contexto)
+    data = facade.create_data_tabela_campeonato(request, contexto)
     return data
